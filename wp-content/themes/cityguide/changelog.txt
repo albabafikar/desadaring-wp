@@ -1,0 +1,876 @@
+v3.30, 31.5.2018
+----------------
+- Fixed: Comments form 
+- Added: Captcha item review form
+
+v3.29, 24.5.2018
+----------------
+- Update: Form fields reset styles in reset.css
+- Added: Support for AIT Comments Extension plugin
+- Added: GDPR support for contact owner form, custom notification text can be displayed within Name, Email, Subject and Message inputs
+- Added: GDPR support for registration form, custom notification text can be displayed within Username and Email inputs
+- Added: GDPR support for AIT Claim Listing plugin
+- Added: GDPR support for AIT Item Reviews plugin
+
+v3.28, 19.4.2018
+----------------
+- Added: Helper input for all Inputs in Contact Form element (GDPR requirement)
+
+v3.27, 12.4.2018
+------------------
+- Fix: Fixed email notification for expired Package - can be defined in Theme Options > Packages settings.
+- Fix: Fixed typo in theme admin
+- Update: Contact Owner form on Item detail page updated. Added Captcha and loader icon.
+
+v3.26, 22.3.2018
+------------------
+- Fix: Fixed admin translation problem for AIT Events Pro plugin
+
+v3.25, 15.3.2018
+------------------
+- Update: Updated product image cropping sizes for Woocommerce 3.3+
+- Update: Allowed opening of Woocommerce Product images in lightbox in responsive design
+- Update: Updated Colorbox jquery library to latest version
+
+v3.24, 8.3.2018
+------------------
+- Fix: woocommerce gallery
+- Update: Compatibility with WooCommerce 3.3.3
+
+v3.23, 1.3.2018
+------------------
+- Fix: Starting position of Header Map Element is always position defined in Header Map element, instead of position 0,0
+
+v3.22, 25.1.2018
+------------------
+- Fix: Fixed wrong Username displayed in Login Widget if email address used as username
+- Fix: Fixed Streetview for header map on standard Pages, Streetview is displayed according to settings in Header Map element
+
+v3.21, 18.1.2018
+------------------
+- Fix: Fixed number of Item posts displayed in Header Resources section on multilingual website
+
+v3.20, 7.12.2017
+------------------
+- Fix: Fixed Add Media button in admin screen for directory users
+- Fix: Missing functionality from Yoast SEO plugin in SEO metabox
+- Update: Updated FontAwesome library
+
+v3.19, 9.11.2017
+------------------
+- Fix: Fixed missing My Items button in login widget when administrator have to approve users Item posts.
+
+v3.18, 26.10.2017
+------------------
+- Fix: Wrong redirection on password protected posts
+
+v3.17, 21.9.2017
+------------------
+- Fix: Registered user could see all Items while creating new Event Pro
+
+v3.16, 7.9.2017
+------------------
+- Fix: Captcha in Contact Form Element is regenerated after form submit and reset
+
+v3.15, 31.8.2017
+----------------
+- Fix: Problem with untranslatable notificiation payment email. Text in the email is translated now. Make sure have also latest AIT Languages plugin.
+
+v3.14, 24.8.2017
+----------------
+- Fix: Item featured image use post title as alt attribute
+
+v3.13, 17.8.2017
+----------------
+- Fix: Fixed text color dropdown in WordPress visual editor
+
+v3.12, 10.8.2017
+----------------
+- Fix: Fixed dropdown menus in WordPress visual editor
+
+v3.11, 3.8.2017
+----------------
+- Fix: Fixed special characters escaping for categories title in portfolio filter
+
+v3.10, 20.7.2017
+---------------
+- Fix: Fixed item infowindow on the map covered by Google Maps buttons
+
+v3.9, 13.7.2017
+---------------
+- Fix: Google Map infowindow problem
+- Fix: search filter pagination error
+
+v3.8, 29.6.2017
+----------------
+- Fix: Button Items in login widget displayed only if logged in user has capability to manage Item Posts
+
+v3.7, 1.6.2017
+--------------
+- Fix: Search element position when there is no map and menu
+- Tweak: Search form dropdowns position in responsive
+
+
+v3.6, 27.4.2017
+----------------
+- Update: WooCommerce 3 compatibility
+
+
+v3.5, 13.04.2017
+----------------
+- Added: Scroll offset to urls with hash to work nicely with sticky menu
+- Update: Demo images are now downloaded via HTTPS
+- Fix: Minor bugs in JS in Advertisements element
+- Fix: Do not send full server directory paths to JS object in elements
+- Update: Basic compatibility with WooCommerce 3.0 (resolved deprecated notices)
+- Fix: Preview of Text element in Page Builder for other languages
+- Fix: Missing names for sidebars in some languages caused widget administration to be unusable
+
+
+v3.4, 06.04.2017
+----------------
+- Fix: In narrow layout page background was not applied on unsortable elements
+- Fix: Disable header menu rendering when Main Menu is empty (no links)
+- Update: Year range from 1900-3000 for datepicker in Theme Options / Page Builder
+- Fix: Proccess shortcodes in promotion element's text area
+- Fix: Show Page Builder button on Admin Bar only when user has permission to access Page Builder
+- Fix: Enabled fuzzy search in jquery.chosen.js selectboxes in Page Builder - able to find nested items now
+- Fix: Shortcodes Generator modal window failed to load in Page Builder for Text Elements
+- Fix: Use HTTPS protocol for external services - Twitter, Mixcloud
+- Fix: Header Image for specific Event Pro
+- Fix: Header Map centered to wrong position when returned from Streetview mode (Event Pro detail page)
+
+v3.3, 23.02.2017
+----------------
+- Fix: Structured data on single item page
+
+v3.2, 09.02.2017
+----------------
+- Fix: Horizontal tabs responsive script
+
+v3.1, 2.2.2017
+--------------
+- Fix: User couldn't access wordpress login screen via direct link example.com/wp-admin/
+
+v3.0, 26.01.2017
+----------------
+- Update: Speed optimization for projects with large number of items
+- Update: Header Map loads items asynchronously (prevents server failures and heavy loads)
+- Update: php7 optimization
+- Update: Support for free basic packages
+
+v2.94, 19.01.2017
+-----------------
+- Update: Updated demo-content
+- Improved: Usability of Page Builder on smaller resolutions
+- Added: Collapsible Available Elements to gain more screen estate while scrolled
+
+v2.93, 12.01.2017
+-----------------
+- Fix: W3C validation error in Search Form element
+- Fix: Password protected pages works correctly with Page Builder
+- Fix: Position of Columns Element On-off switch
+- Fix: Max 4 rows in Element Content previews in the Page Builder
+- Improvement: Allows users to register with Cyrillic usernames
+- Fix: Problem with malfunctioned permalinks after importing Demo Content
+
+v2.92, 09.12.2016
+-----------------
+- Fix: Upcoming Advanced Search plugin styles interferee with original Search Form location input
+- Fix: Php warning when Event's Pro Fee price was empty
+
+v2.91, 01.12.2016
+-----------------
+- New: Content preview of Elements in Page Builder. You can have brief look what will Element look like on frontend when you are working in Page Builder.
+- Update: Removed deprecated meta value target-densityDpi
+
+v2.90, 21.11.2016
+-----------------
+- Added: Notice when only registered users can add review
+- Added: Compatibility with upcoming Ait Advanced Search Plugin
+- Added: Locale based number formatting for price in WpLatte currency macro
+- Fix: Carousel initialization conditions
+
+v2.89, 10.11.2016
+-----------------
+- Update: Updated demo-content
+- Fix: Placeholder in range input
+- New: Option for enabling 'Anonymize IP address' feature in Google Analytics
+- Fix: TinyMCE editor fullscreen in Page Builder
+- Fix: Problem with searching in other languages then default
+- Improvement: Sort Font Awesome icons alphabetically
+- Update: Drag&drop ordering pages and custom post types is removed, it caused some serius problems. Can be enabled back with 'Simple Page Ordering' plugin
+
+v2.88, 27.10.2016
+-----------------
+- Update: Compatibility with AIT permissions manager plugin
+
+v2.87, 20.10.2016
+-----------------
+- Fix: Past events displayed current date on archive page
+
+v2.86, 06.10.2016
+-----------------
+- New: Redesigned Page Builder, Theme Options and other admin pages related to AIT theme features
+
+v2.85, 22.09.2016
+-----------------
+- Fix: Special Offers unavailable in Easy Admin
+
+v2.84, 15.9.2016
+----------------
+- Added: Custom message in Google Map element if there is a problem with API key
+- Fix: In some cases Event Pro date wasn't displayed
+- Fix: sub, sup style was missing
+- Fix: Stripe payment process possible security issue
+
+v2.83, 8.9.2016
+----------------
+- Update: Bundled plugins updated
+
+v2.82, 30.08.2016
+-----------------
+- New: Compatibility with new membership system
+
+v2.81, 25.08.2016
+-----------------
+- Fix: Cases when Ait Toolkit plugin isn't active
+
+v2.80, 18.08.2016
+-----------------
+- Fix: If "Date To" wasn't specified theme displayed current date
+- Fix: Admin google map streetview initialization
+
+v2.79, 11.08.2016
+-----------------
+- Fix: Events order on item's detail page
+- Update: Updated mobile.js library
+- Fix: Export function fatal error when revolution slider directory doesn't exists
+
+v2.78, 04.08.2016
+-----------------
+- Added: Compatibility for Special Offers filters on archive page
+- New: Theme now displays also Events Pro which have already started and are still running (requires most recent version of Events Pro plugin)
+
+v2.77, 28.07.2016
+-----------------
+- Fix: Blank space under Header Map in responsive
+- Fix: Fixed header resources link when translation exists
+- Fix: Megamenu with Icon Image
+- Fix: Fixed comment pagination links
+
+v2.76, 21.07.2016
+-----------------
+- Update: Updated Google Fonts list
+- Fix: Potencial fatal error with AIT Get Directions & AIT Item Extension after their deactivation
+
+v2.75, 14.07.2016
+-----------------
+- Update: Code refactoring and stability fixes
+- Update: Updated TGM Plugin Activation library to v2.6.1
+- Fix: When there are multiple version of same language like en_US, en_GB, en_CA, item search wasn't working
+- Fix: Captcha in Contact Form element now works with cache plugins like WP Super Cache
+- Update: Requirements checker now checks for max_input_vars param, it is recommended to set this PHP param to value at least 3000
+
+v2.74, 29.06.2016
+-----------------
+- New: In Theme Option you can insert Google Maps API key (requirement for all Google Maps since 22.06.2016)
+- New: Added Greek, Canadian English, Turkish and Ukrainian languages to Google Maps Element
+
+v2.73, 23.06.2016
+------------------
+- Fix: Woocommerce my-account pages
+
+v2.72, 16.06.2016
+-----------------
+- Added: Compatibility with Special Offers Plugin
+- Update: Updated ajax return messages for contact form element
+
+v2.71, 09.06.2016
+-----------------
+- Update: Regenerated POT file for translations containing the newest text strings
+- Fix: PHP error - Undefined var $parentTheme in AitUpgrader
+- Improvement: Google Maps are loaded in the WP admin and on the frontend according to selected language
+- Fix: Need for "double" save of Theme Options to invoke color/design changes is gone
+- Update: Response notification when required fields for wp-mail are missing
+
+v2.70, 3.6.2016
+-----------------
+- Improvement: Skeleton and Theme Upgrader
+- Fix: Package slug and compatibility with AIT Claim Listing
+
+
+v2.69, 02.06.2016
+-----------------
+- Updated: Widget Area element progressive page loading
+- Fixed: Package name now accepts special symbols
+- Fix: Woocommerce checkout page wasn't displaying image for paypal payment option when progressive loading was enabled
+- Update: Added response notification for wp_mail ajax in contact form element. Now there is also a notification if the mail wont send.
+- Improvement: Export only images which are in media library and all their sizes. This results in reduced size of exported content.
+
+v2.68, 24.05.2016
+-----------------
+- Fixed: Url param escaping for search filters
+- Update: Updated return headers for contact owner ajax
+- Fixed: Added admin capabilities for yoast seo plugin
+- Fixed: Header map display on single detail page
+- Added: Possibility to order Events in Event Element by Event's date (requires updated Ait Toolkit plugin)
+- Fix: SEO element on 404 page (and other spcial pages) is working again
+- Fix: Better compatibility with Object Cache plugins and WpLatte engine
+
+v2.67, 17.05.2016
+-----------------
+- Fix: WooCommerce Style fix
+- Fix: Allow language inputs for text controls on Blog special page in Page Builder
+- Fix: Do not display commnets element on frontend on these special pages 404, search, archive, wc_product, wc_shop
+
+
+v2.66, 11.05.2016
+-----------------
+- Update: Updated demo-content
+- Fix: Do not display comments element on irrelevant pages in Page Builder, such as 404, search page, etc.
+- Fix: Post dates in Posts Element
+- Fix: Responsive toggles display
+- Fix: Woocommerce select display
+- Fix: Dragging elements from/to columns in pagebuilder
+- Fix: Problem with saving content in 2 Text Elements placed within the same Columns Element
+
+v2.65, 03.05.2016
+-----------------
+- Added: Email validation during registration of new users
+- Fix: Clean up dead captcha files
+- Fix: (Related only to all directory-type themes) Our AIT Shortcodes button in the editor can use even package users. There are no restrictions for that button (aka shortcodes generator) now
+- Fix: Bug in Categories Widget with double title when categories are displayed as dropdown
+- Fix: Disabled conflicting selectbox library on woocommerce pages
+- Fix: Category option does not show "+ Add new category" text when user hasn't got the capabilities
+
+v2.64, 28.04.2016
+-----------------
+- Fix: Missing sidebars on frontend
+
+v2.63, 27.04.2016
+-----------------
+- Fix: Months translation of Events Pro posts in Events Pro Element, Archive and Category pages
+- Fix: Fixed map input "NaN" value breaking map in administration
+- Fix: Some edge cases in Import/Export processing were fixed
+- Fix: Detect correct locale for cloned item label in Page Builder
+- Fix: Special edge case whean footer area has title "Footer 1"
+- Added: OrderBy Title option for posts element
+- New: WooCommerce breadcrumbs with categories on shop pages
+- New: UI indication for delete theme cache and images cache buttons when deleting was finished
+- Update: demo content
+
+v2.62, 19.04.2016
+-----------------
+- Added: Item Extension plugin style
+- Fix: datepicker time zones caused wrong time in admin inputs
+- Update: Updated POT files
+
+v2.61, 12.04.2016
+-----------------
+- Updated: New theme implementation for Ait Get Directions plugin
+- Fix: Some compatibility fixes for AIT plugins
+
+v2.60, 05.04.2016
+-----------------
+- Fix: Some compatibility fixes for upcoming WordPress 4.5
+- Fix: Compatibility fixes for upcoming AIT Languages v2.1 plugin
+
+v2.59, 30.03.2016
+-----------------
+- Fix: RSS widget does not display 'h3' tags anymore
+- Fix: jQuery Waypoint does not throw error anymore
+- Fix: On special pages some elements with categories (e.g. advertisements spaces) didn't work correctly with translations
+
+v2.58, 16.03.2016
+-----------------
+- Fix: Quickfix for map input in the admin
+- Update: New version of Slider Revolution - v5.2.2
+
+v2.57, 15.03.2016
+-----------------
+- Fix: Map input crashing javascript when no location is found
+- Fix: Date input problem with different timezones
+
+v2.56, 08.03.2016
+-----------------
+- Update: Regenerated POT files
+- Fix: Reset Layout Options functionality works again
+- Tweak: CSS is now generating on "Theme/Page Builder Options" save instead on the frontend
+
+v2.55, 01.03.2016
+-----------------
+- Updatad: Escaping characters entered to the search preventing possible xss
+- Added: Dependencies for modernizr js lib
+
+v2.54, 23.02.2016
+-----------------
+- Fixed: Item couldnt be trashed by single user
+- Fixed: Items element item count condition when item reviews plugin is enabled
+- Added: Page Title search on-off
+- Update: Reduced number of DB queries about 59%
+
+v2.53, 04.02.2016
+-----------------
+- Update: All WooCommerce styles separated
+- Update: WooCommerce default cart layout
+- Fixed: Item search pagination break
+- Updated: Item address javascript fix
+- Fix: Official Revolution Slider, when you purchase it by yourself, not our custom bundled version, is supported by our theme framework (Page Builder)
+- Fix: PHP error - redeclared class in WpLatte (occurred in Event Guide theme)
+- Tweak: Compatibility tweaks for upcoming more performant AIT Toolkit plugin
+
+
+v2.52, 26.01.2016
+-----------------
+- Fix: Inline-block layout of social icons with names
+- Update: Updated captcha validation for login widget
+- Fix: Compatibility of comment form fields with WP 4.4 (Reverts the "comment" field position to below the other form fields.)
+- Tweak: Minor internal tweaks of the framework
+
+
+v2.51, 15.01.2016
+-----------------
+- Fix: Undefined variable wp_version
+
+v2.50, 15.12.2015
+-----------------
+- Fix: Admin js tweaks
+
+v2.49, 09.12.2015
+-----------------
+- Fix: (Critical) Theme Options couldn't save changed values, there were still default values after page refresh
+- Fix: Reset button on Default Layout admin page works correctly now
+
+v2.48, 08.12.2015
+-----------------
+- Fix: Blog page menu item highlighting, if blog is currently opened page
+- Fix: Advanced search on directory themes when polylang is enabled
+- Fix: PHP Notices in Shortcode Generator Modal Window
+- Fix: Amongst some categories (e.g. Portfolios) there was incorectly listed language name from AIT Languages
+
+
+v2.47, 01.12.2015
+-----------------
+- Added: Contact owner form options to define the sender of email
+- Fixed: Package item count when item trashed
+- Fixed: Package event count when event trashed
+- Fix: Corrected behaviour of WP custom queries (mostly in Elements) when some CPT is set as non translatable in AIT Languages settings
+- Update: Font Awesome v4.5.0
+
+v2.46, 24.11.2015
+-----------------
+- Fix: Default list element styles were not applied in item detail content
+- Fix: Embed URLs for YouTube and Vimeo videos were generated incorrectly resulting in not loading the videos
+- Fix: Fixed all dates where they were displaying current date and time
+- Fix: Issue with missing texts in widgets after updating to AIT Languages 2.0 is now fixed
+- Fix: Fullscreen option for youtube video element
+
+
+v2.45, 18.11.2015
+-----------------
+- Added: Added default header to package options
+
+v2.44, 12.11.2015
+-----------------
+- Fixed: Package upgrade process failed to change package
+
+v2.43, 10.11.2015
+-----------------
+- Added: Added captcha validation for registration widget
+- New: Google Street View in Google Map Element
+- Update: Various updates for upcomming new AIT Languages 2.0 plugin
+- Fix: Improved compatibility of Advertising Spaces Element vs. Ad blockers
+
+v2.42, 03.11.2015
+-----------------
+- Update: Updated author metabox display
+- Fixed: Stripe gateway user upgrade
+
+v2.41, 20.10.2015
+-----------------
+- Fix: Better blog entries footer info layout in responsive
+- Fix: Some comment form inputs were overflowing in responsive
+- Fix: When adblocker extension in a browser blocked Advertising Spaces Element whole web page was broken
+- Added: Added streetview functionality to google maps element
+
+
+v2.40, 13.10.2015
+-----------------
+- Added: Lost Password feature in Login Widget
+- Added: Break-word in Page title for long words
+- Update: Contact form element form submit button disabled while form submitting
+- Fix: No more huge amount of old cache files (mainly old .css) in uploads/cache/ folder
+- Fix: Some forgotten text are now included in POT file
+
+
+v2.39, 06.10.2015
+-----------------
+- Added: Package feature to enable / disable yoast seo plugin metabox on item detail
+- Fixed: Removed "Login failed" notification on successful login
+- Fixed: Fixed Items Element count for list layout
+- Fixed: Changed zoom and street view map controls position, weren't clickable before
+- Added: Header map dragging disabled while page loading
+
+v2.38, 29.09.2015
+-----------------
+- Added: Search input of Search Form element has now auto-grow feature
+- Fix: Rating tooltip overflow in the end of page
+- Updated: Admin author change feature
+
+v2.37, 22.09.2015
+-----------------
+- Fix: In responsive the first widget of sidebar was overflowing
+- Updated: Register compatibility with wordpress 4.3.1
+- Added: Frontend notification on login fail
+- Fix: Page-title Item Reviews responsive
+- Fix: Item listing stars rating responsive
+- Added: Item author change functionality
+- Fixed: Map input verification
+- Updated: Ajax emails formatting
+
+
+v2.36, 16.09.2015
+-----------------
+- Fixed: Duplicate featured image for pages in page title
+- Fixed: AIT Claim Listing plugin claim conditions
+- Fixed: Stars rating overlap in responsive
+- Fixed: Item detail social like buttons responsive
+- Fixed: Single item contact owner mail form
+- Update: Updated facebook element
+- Update: Font Awesome v4.4.0
+- Update: Framework compatibility with upcoming improved AIT Languages plugin
+
+v2.35, 08.09.2015
+-----------------
+- Updated: Package on/off option for comments
+- Fix: Typo in variable name in jquery.portfolio.js
+- Tweak: Theme Admin: if switched section contains map preview trigger resize to re-render map
+- Update: Font Awesome icons v4.4.0
+- Update: Updated condition to show / hide item description in services element
+- Update: Updated google map element
+- Update: Updated capabilities for ait-item cpt
+
+v2.34, 02.09.2015
+-----------------
+- Fix: Header map default position on location pages
+- Added: Preparation for stripe payments plugin
+
+v2.33, 28.08.2015
+-----------------
+- Fix: Date format on Event single page
+- Added: Support for updated ait claim listing plugin
+- Fix: When Visual Editor is disabled in user settings, Text Element in Page Builder doesn't work.
+
+v2.32, 18.8.2015
+----------------
+- Fix: Allow special characters in Member custom post type Title
+- Fix: Video element - fixed some PHP errors
+- Fix: Posts element - fixed some PHP errors
+- Fix: Added Sender parameter in Contact Form - some hostings didn't send emails from Contact Form
+
+
+v2.31, 11.08.2015
+-----------------
+- Fix: 'Notice:  Array to string conversion'
+- Fix: Missing some text elements on non-english WP installs after demo content import
+- Fix: PHP notice on 404 page
+- Fix: One letter of text string displayed in metabox text fields
+- Update: Removed "Dev mode:" menu in Admin Bar and dev mode is disabled
+- Update: Updated javascript for content element on woocommerce pages
+
+
+v2.30, 21.07.2015
+-----------------
+- Fix: Design on wp-activate.php page was broken
+- Fix: Move "Languages" menu item back under "Theme Admin" item
+- Fix: When datepicker bundled with WP was used by some plugins (eg. Easy Reservations) that calendar was displayed in zh-TW language
+
+
+v2.29, 14.07.2015
+-----------------
+- Fix: Datetime picker in admin was not working properly in Firefox
+- Added: Support for Ait Paypal Subscriptions plugin
+
+v2.28, 07.07.2015
+-----------------
+- Update: Improved compatibility with recent stand-alone AIT Languages plugin - this plugin is no more required and pre-packed with the theme, so there is no need to display "install required plugin" admin notice
+
+v2.27, 01.07.2015
+-----------------
+- Fixed: featured items are pushed on top positions of category and location pages
+- New: AIT Languages plugin is no more pre-packed with theme. And also all translations from theme are moved to AIT Languages plugin. Theme package has smaller size in MB. Just update the AIT Languages plugin and the theme and everthing will work as previous.
+- Update: Minimum requirements for our themes and plugins are PHP 5.3.1 and WordPress 4.0. It's time to use modern and secure technologies.
+- Fix: Datepicker on the backend and frontend is translated properly now
+
+
+v2.26, 09.06.2015
+-----------------
+- Added: Archive page for ait-item cpt
+- Update: Updated all translations - translated some new strings
+- New:  Added new Ukrainian (uk) translation
+- Fix: Fixed login screen tooltip on logo - it displays correctly text from "Theme Options -> Admin Branding -> Login Screen Logo Tooltip"
+- Fix: Load Facebook Likebox in current language
+- Fix: Woocommerce product review form colorbox height
+- Fix: Woocommerce product variations form selects clear
+
+
+v2.25, 02.06.2015
+-----------------
+- Fixed: possibility to enable/disable streetview scrolling on mobile devices
+- Added: option to specify header resources button link for not logged in user
+- Tweak: Updated portfolio colorbox widths
+- Fix: Fixed responsive Toggles (double text in selected tab)
+
+v2.24, 26.05.2015
+-----------------
+- Fixed: Images displayed twice in portfolio colorbox with excerpt turned on
+- Updated: wp_mail headers
+- Updated: Ajax mail reply-to headers (Contact Form element)
+- Updated: YouTube video embedding (Portfolio element)
+
+v2.23, 21.05.2015
+-----------------
+- Fixed: Header Map element - advanced settings were not taking effect
+
+
+v2.22, 19.05.2015
+-----------------
+- Fixed: Featured items are pushed on top positions of search result
+- Fixed: Widget Login and Register - on certain resolution login link could not be clickable
+- Updated: WooCommerce styles and responsive
+- Updated: TGM Plugin Activation class v2.4.2 - security update
+- Updated: JavaScript datetime picker compatibility for Firefox (Countdown element)
+- Updated: Email notification data
+
+
+v2.21, 12.05.2015
+-----------------
+- Added: Styles for review submit button in sending state
+- Added: New 'AIT Updater' plugin for automatic updates of AIT themes and plugins
+- Update: Time picker available for Count Down element
+- Added: 4 new social icons for Font Awesome
+- Fixed: Made "Activate map" button text translatable right after page load
+- Updated: Featured items settings
+- Fixed: Special pages for category / location in page builder
+- Updated: Item on default coordinates 1:1 does not show on map
+
+
+v2.20, 05.05.2015
+-----------------
+- Fixed: WP SEO by Yoast compatibility
+- Update: Woocommerce 2.3.8 compatibility
+- Fixed: empty url in css 'background' property caused longer website load
+- Updated: Revolution slider 4.6.92
+- Added: Featured categories
+- Updated: Item display on map with no gps
+
+
+v2.19, 28.04.2015
+-----------------
+- Added: Better responsive in item detail gallery and rating link in item list layout
+- Fixed: Woocommerce prevented non-admin users to access easyadmin
+- Fixed: Paypal plugin integration - checkout price, title, description
+- Fixed: Wp Query optimization for items element
+- Update: Updated all languages
+
+
+v2.18, 23.04.2015
+-----------------
+- Fixed: AIT plugins are not activated on first theme install (problem with updated TGM-Plugin-Activation library)
+
+
+v2.17, 22.04.2015
+-----------------
+- Important security fix
+
+v2.16, 21.04.2015
+-----------------
+- Updated: Beter results with advanced filters plugin
+- Updated: Features section expanded with advanced filters
+- Updated: Taxonomy items and locations advanced filters support
+
+
+v2.15, 15.04.2015
+-----------------
+- Fixed: Advanced filters search results count
+- Fixed: Map click on touch devices
+
+
+v2.14, 14.04.2015
+-----------------
+- Added: Better responsive in item detail address information
+- Fixed: Compatibility with uppercase extension of assets - changed to lowercase
+- Fixed: Account upgrade bug
+- Added: Support for advanced filtering plugin
+
+
+v2.13, 08.04.2015
+-----------------
+- Fixed: Unescaped html tags on search page
+- Fixed: WooCommerce - shortcode's Add to Cart button, cart layout
+- Fix: Content Import - Optimization of fetching attachments from remote location
+
+v2.12, 31.03.2015
+-----------------
+- Fixed: Call the phone number on mobile devices
+- Fixed: Redundant closing div in image header type layout causing clipped menu
+- Added: Item Header type in package capabilities
+- Added: Header Image align options for standard Pages, Category/Location pages and Item pages
+- Fix: WordPress 4.2 compatibility with new handling of shared terms - implemented split_shared_term hook
+- New: font awesome icons v4.3
+- Fixed: Images with caption are not loading
+
+v2.11, 19.03.2015
+-----------------
+- Updated: Item custom fields feature disabled
+
+v2.10, 18.03.2015
+-----------------
+- Fixed: Item detial not showing on localhost
+- Fixed: Adding image or Fontawesome icon from select as Social Icon for Item
+
+v2.9, 17.03.2015
+----------------
+- Fixed: Carousel JS for Job Offers element
+- Updated: Responsive menu
+- Added: Category and location seo support
+- Added: Job offers translatable date
+- Added: Data validation for javascript illegal characters in map
+- Fixed: Frontend registration notification in default (english) language
+- Added: Item custom fields support
+- Added: Social icons select option
+
+v2.8, 10.03.2015
+----------------
+- Fixed: categories, locations and search results pages display Excerpt of item if is filled in admin
+- Fixed: search results order by rating
+- Added: order by rating on category and location pages
+- Fixed: menu on iphone
+- Added: seo keywords for category and location pages
+
+v2.7, 10.03.2015
+----------------
+- Added: Multiple phone numbers for each Item
+- Fixed: PHP Warning if tried to display empty item features
+- Added: Custom styles for Get Directions plugin
+- Added: Ability select if Register or Login tab of "Login Widget" appear first after page load
+- Added: Packages in registration widget are ordered according to order of packages in Theme Options
+- Added: validation to map input for latitude and longitude values
+- Fixed: typography settings remember selected option on page refresh
+- Fixed: red color for new created counter element
+- Updated all language files (mo/po files)
+
+v2.6, 27.02.2015
+----------------
+- Fixed: Hide opening hours
+- Fixed: Woocommerce product search
+- Fixed: Woocommerce 2.3.5 compatibility
+- Added: Greek translation
+- Fixed: compatibility of our AIT Languages plugin with WordPress SEO by Yoast plugin
+- Fixed: Search results display featured items on top position
+- Added: Newest Items widget
+
+v2.5, 9.2.2015
+----------------
+- Added: Item telephone number dialing
+- Added: Header map ability to show telephone number of item in infobox
+- Added: Web Link Label field on Item Edit page to display text label instead full url of business website
+- Added: Ability hide empty contact information on Item detail pages and hide GPS information from Theme Options
+- Added: Ability add nofollow attribute for Item website link
+- Fixed: Maximum zoom of map with one marker displayed
+- Fixed: Address special characters escaping
+- Added: Ability to upgrade account from profile
+- Added: Rich Snippet support for reviews
+
+v2.4, 27.1.2015
+----------------
+- Fixed: Narrow layout Google Map overflow
+- Fixed: Comment form labels overflow
+- Fixed: Menu display on mobile devices
+
+
+v2.3, 22.01.2015
+----------------
+- Fixed: iOs buttons issues
+- Fixed: Job Offer email link on detail page
+- Added: Optional checkbox for terms and conditions in registration widget
+
+
+v2.2, 13.01.2015
+----------------
+- Fixed: Products price text overflow
+- Added: Romanian language
+- Updated: Revolution Slider to v4.6.5
+- Updated: New twitter icons
+- Updated: Packages Manager
+- Updated: Registration/Login Widget
+- Fixed: Item quick edit bugs
+- Updated: Pagination display
+
+
+
+v2.1, 17.12.2014
+----------------
+- Added: support for wp-signup.php. Prior to this additional support, design of that page was broken
+- Fixed: Google Maps are now translated according to your frontend page language in which is page viewed
+
+
+v2.0, 10.12.2014
+-----------------
+- Added: Brazilian Portuguese translation
+- Added: Albanian translation (partly translated)
+- Added: Accounts - Packages Support
+- Added: Bank transfer gateway
+- Added: Payment Gateways Support available through AIT Payment Gateways plugin
+- Added: Reviews Support available through AIT Item Ratings plugin
+- Added: EasyAdmin Support available through AIT Easy Admin plugin
+- Added: Import & Export content support through AIT Import & Export Plugin
+- Updated: Login Widget with Package and Payments Type
+- Feature: Compatible with upcoming WordPress 4.1
+
+
+v1.5, 25.11.2014
+-----------------
+- Updated: hentry class on article
+- All other changes related to framework are now in framework-changelog.txt file
+
+
+v1.4, 24.11.2014
+----------------
+- Fixed: hAtomFeed on static pages
+- Display/hide opening hours at all using button switcher in Opening Hours section
+- Allow to load "portal" functions files from child theme if they exist there, otherwise they'll beloaded from parent theme
+- Added: Google Fonts in typography
+- All other changes related to framework are now in framework-changelog.txt file
+
+
+v1.3, 4.11.2014
+---------------
+- Updated demo-content
+- Added activate/deactivate map button for header-map element
+- Do not display HTML in tagline
+- Fixed css for "Taxonomy List Element"
+- All other changes related to framework are now in framework-changelog.txt file
+
+
+v1.2, 9.10.2014
+---------------
+- Updated: Header map element
+- Added: Streetview control in map input
+- Updated: Search element and search results page
+- Added: Social icons to single item
+
+
+v1.1, 24.9.2014
+---------------
+- Updated: woocommerce templates
+- Added: Google rich snippet support
+- Added: Directory items widget
+
+
+v1.0, 12.9.2014
+----------------
+- Theme Released
+
+

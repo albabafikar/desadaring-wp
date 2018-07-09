@@ -1,0 +1,31 @@
+
+@import "../../../@common/common.less";
+
+.textCrop(@rowSize) when (isnumber(@textRows))	{ height: @rowSize * @textRows; overflow: hidden; }
+
+#@{el}{
+
+	.elm-item-organizer-container .item-text p	{ .textCrop(26px); }
+
+}
+
+#@{el}-main {
+
+	.layout-box .item .item-thumbnail-wrap	{ height: @boxImageHeight; min-height: 135px; background-size: cover; background-position: center; }
+	.layout-list .item .item-thumbnail-wrap	{ height: 100%; background-size: cover; background-position: center; }
+}
+
+@media all and (max-width: 640px) {
+
+	#@{el}{
+
+		.elm-item-organizer-container .item-text p	{ .textCrop(26px); }
+
+	}
+
+}
+
+
+.@{el}{
+	clear:both;
+}

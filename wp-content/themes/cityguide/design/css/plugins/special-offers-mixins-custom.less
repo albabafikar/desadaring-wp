@@ -1,0 +1,34 @@
+/**************************************************/
+/*** && SPECIAL OFFERS CUSTOM MIXINS            ***/
+/**************************************************/
+
+/*** VARIABLES ************************************/
+
+/* Colors */
+
+@offer-decColor    = @theme-general-decColor;
+@offer-secdecColor = lighten(@theme-general-decColor, 2%);
+@offer-whiteText   = #fff;
+
+/* Buttons */
+
+@offer-btn-hover    = lighten(@offer-btn-bg, 3%);
+@offer-btn-radius   = 0;
+@offer-btn-shadow   = 0 -3px 0 rgba(0,0,0,0.2) inset;
+
+/* Item Detail */
+
+@itemOfferMoreBg    = darken(@theme-general-pageBgColor, 3%);
+@itemOfferMoreColor = @theme-general-txtColor;
+
+/* Misc */
+
+@offerHoverIconBg    = @offer-decColor;
+@offerHoverIconColor = @offer-whiteText;
+
+/*** MIXINS EXTENDERS **************************/
+
+.offerButton-extend() { text-transform: uppercase; &:hover { .box-shadow(none); } }
+.elmOfferButton-extend() { text-transform: uppercase; &:hover { .box-shadow(none); } }
+
+/* && end of SPECIAL OFFERS CUSTOM MIXINS */

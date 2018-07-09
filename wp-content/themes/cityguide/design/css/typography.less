@@ -1,0 +1,336 @@
+
+@import "mixins.less";
+
+/**************************************************/
+/*** && Fonts definitions                       ***/
+/**************************************************/
+
+
+.font(@weight, @style = normal){
+	font-family: @theme-typography-mainFont-family;
+	font-weight: @weight;
+	font-style: @style;
+}
+
+.fontTXT(@weight, @style = normal){
+	font-family: Arial, sans-serif;
+	font-weight: @weight;
+	font-style: @style;
+}
+
+
+.fontface(@type) when (@type = theme){
+
+
+	@font-face {
+    	font-family: 'Roboto';
+    	src: url('@{fontsUrl}/roboto/roboto-regular.eot');
+    	src: url('@{fontsUrl}/roboto/roboto-regular.eot?#iefix') format('embedded-opentype'),
+        	 url('@{fontsUrl}/roboto/roboto-regular.woff') format('woff'),
+        	 url('@{fontsUrl}/roboto/roboto-regular.ttf') format('truetype'),
+        	 url('@{fontsUrl}/roboto/roboto-regular.svg#robotoregular') format('svg');
+    	font-weight: 400;
+    	font-style: normal;
+
+	}
+
+	@font-face {
+    	font-family: 'Roboto';
+    	src: url('@{fontsUrl}/roboto/roboto-bold.eot');
+    	src: url('@{fontsUrl}/roboto/roboto-bold.eot?#iefix') format('embedded-opentype'),
+        	 url('@{fontsUrl}/roboto/roboto-bold.woff') format('woff'),
+        	 url('@{fontsUrl}/roboto/roboto-bold.ttf') format('truetype'),
+        	 url('@{fontsUrl}/roboto/roboto-bold.svg#robotobold') format('svg');
+    	font-weight: 700;
+    	font-style: normal;
+
+	}
+
+	@font-face {
+    	font-family: 'Roboto';
+    	src: url('@{fontsUrl}/roboto/roboto-italic.eot');
+    	src: url('@{fontsUrl}/roboto/roboto-italic.eot?#iefix') format('embedded-opentype'),
+        	 url('@{fontsUrl}/roboto/roboto-italic.woff') format('woff'),
+        	 url('@{fontsUrl}/roboto/roboto-italic.ttf') format('truetype'),
+        	 url('@{fontsUrl}/roboto/roboto-italic.svg#robotoitalic') format('svg');
+    	font-weight: 400;
+    	font-style: italic;
+
+	}
+
+	@font-face {
+		font-family: 'Roboto';
+		src: url('@{fontsUrl}/robotoslab/robotoslab-regular.eot');
+		src: url('@{fontsUrl}/robotoslab/robotoslab-regular.eot?#iefix') format('embedded-opentype'),
+			 url('@{fontsUrl}/robotoslab/robotoslab-regular.woff') format('woff'),
+			 url('@{fontsUrl}/robotoslab/robotoslab-regular.ttf') format('truetype'),
+			 url('@{fontsUrl}/robotoslab/robotoslab-regular.svg#RobotoSlabRegular') format('svg');
+		font-weight: 800;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Roboto';
+		src: url('@{fontsUrl}/robotoslab/robotoslab-bold.eot');
+		src: url('@{fontsUrl}/robotoslab/robotoslab-bold.eot?#iefix') format('embedded-opentype'),
+			 url('@{fontsUrl}/robotoslab/robotoslab-bold.woff') format('woff'),
+			 url('@{fontsUrl}/robotoslab/robotoslab-bold.ttf') format('truetype'),
+			 url('@{fontsUrl}/robotoslab/robotoslab-bold.svg#RobotoSlabBold') format('svg');
+		font-weight: 900;
+		font-style: normal;
+	}
+
+
+}
+
+
+.fontface(@theme-typography-mainFont-type);
+
+
+.lang-@{current-lang}{
+
+  body								{ .font(400); }
+  strong, b                       	{ .font(700); }
+  em								{ .font(300, italic); }
+  a.comment-reply-link            	{ .font(900); }
+
+  h1		{ .font(800); }
+  h2		{ .font(800); }
+  h3		{ .font(800); }
+  h4		{ .font(900); }
+  h5		{ .font(900); }
+  h6		{ .font(900); }
+
+  h1, h2, h3, h4, h5, h6
+  {
+  strong		{ .font(900); }
+  }
+
+  .breadcrumb-sep	{ font-weight: bold; }
+
+  input, textarea			{ .fontTXT(normal); }
+  select							{ .fontTXT(normal); }
+
+  input[type="submit"]		{ .font(700); }
+  input[type="reset"]		  { .font(700); }
+
+  .ui-datepicker                                        { .fontTXT(normal); }
+  .ui-datepicker .ui-widget-header                      { .font(700); }
+  .ui-datepicker table th						                    { font-weight: bold; }
+  .ui-datepicker table td a.ui-state-default            { font-weight: normal; }
+
+  blockquote, q     { font-style: italic; }
+
+  .site-logo a,
+  .site-logo a:hover  { .font(800);}
+
+  .nav-menu-main > ul > li > a  { .font(400); }
+  .menu-item-column-label 										{ font-weight: bold; }
+
+  .menu-item-column > ul li.menu-item-has-children > a 			{ font-weight: bold; }
+
+  .entry-content table thead th	{ font-weight: bold; }
+  .entry-content table tbody th	{ font-weight: bold; }
+
+  .entry-content .tabstyle1 table thead th 	{ font-weight: bold; }
+
+  .wp-caption .wp-caption-text  { font-style: italic; }
+
+  .ait-sc-button .title	  { .font(700); }
+
+  .elm-easy-slider-main .bx-wrapper li .bx-caption .bx-caption-desc
+    {
+     span.bx-link-button	{ .font(700); }
+    }
+
+  .elm-easy-slider-main ul.easy-slider li .easy-title { .font(700); }
+
+  .elm-portfolio .filters-wrapper .filter-wrapper .selected	     { .font(400); }
+  .elm-portfolio .filters-wrapper .filter-wrapper .selected span { .font(400); }
+
+  .elm-item-organizer .item-duration   { .font(400); }
+
+  .elm-posts-main .item-info  { .font(400); }
+
+  .elm-services-main .readmore { .font(700); }
+
+  .elm-events-main .item-info { .font(700); }
+
+  .elm-events-main .item-info strong { .font(400); }
+
+  .elm-events-main .layout-list .event-date .entry-date .link-month { .font(700); }
+  .elm-events-main .layout-list .event-date .entry-date .link-day   { .font(700); }
+
+  .elm-job-offers-main .item-duration         { .font(700); }
+  .elm-job-offers-main .item-duration strong  { .font(400); }
+  .elm-job-offers-main .job-contact	          { .font(400); }
+  .elm-job-offers-main .job-contact strong    { .font(400); }
+
+  .elm-testimonials-main .item-text						           { font-style: italic; }
+  .elm-testimonials-main .item .item-info .item-author   { .font(400); }
+  .elm-testimonials-main .item-text .item-excerpt:before { font-weight: bold; }
+
+  .elm-toggles-main .ait-tabs-horizontal ul.ait-tabs-nav li a	 { .font(400); }
+  .elm-toggles-main .ait-tabs .tabs-wrapper .selected	         { .font(700); }
+  .elm-toggles-main .responsive-tabs-select                   { .fontTXT(700); }
+
+  .local-toggles .toggle-content .toggle-container   { .font(normal); }
+
+  .elm-price-table .table-header h3					{ .font(900); }
+
+  .elm-price-table .table-header .table-price	   	{ .font(400); }
+  .elm-price-table .table-button a              	{ .font(400); }
+
+  .elm-countdown-main .clock-data	.clock-value  { .font(700); }
+
+  .elm-counters-main .counter-title   { .font(700); }
+
+  .elm-counters-main .counter-type-textbox .type-text   { .font(700); }
+
+  .member-position-title	{ font-weight: bold; }
+
+  .entry-content-hider   { .font(700); }
+
+  .elm-google-map	 .gmap-infowindow-content p  { .fontTXT(normal); }
+
+  .elm-contact-form-main form p .input-row .input-label .label                { font-weight: bold; }
+  .elm-contact-form-main form .input-submit .submit-wrap input[type="reset"]  { .font(400); }
+
+  .elm-products {
+
+    .product-price                                  { .font(700); }
+    .product-featured .item-title h3                { font-weight: bold; }
+  }
+
+  .gallery .gallery-caption				{ font-style: italic; }
+
+  .hentry, .entry-footer	{
+
+    .entry-title h2	 { .font(800); }
+  }
+
+  .hentry.sticky {
+
+    .featured-post { font-weight: bold; }
+  }
+
+  .commentlist .comment-meta .fn { .font(900); }
+
+  #respond h3	small	             { .fontTXT(bold); }
+  #respond form label .required	 { font-weight: bold; }
+
+  a.post-edit-link, a.comment-edit-link,
+  a.comment-reply-link           { .font(700); }
+
+  .widget-container .widget-title h3      { .font(800); }
+  .widget_rss .widget-title               { .font(800); }
+  .widget_posts a.thumb-link h4           { .font(900); }
+  .widget_calendar th	                    { font-weight: bold; }
+  .widget_calendar tbody td#today         { font-weight: bold; }
+  .widget_calendar tbody td a	            { font-weight: bold; }
+  /*.widget_rss	.widget-content a.rsswidget { font-weight: bold; }*/
+
+  .sharebox .middle a  { font-weight: bold; }
+
+  .button           			{ .font(400); }
+
+  .contact-owner-container a 	{ .font(700); }
+  button[type="submit"]			{ .font(700); }
+
+ /* Theme Custom Content */
+
+	/* Page Title */
+	.single-ait-event-pro .page-title .entry-date { .font(900); }
+
+	/* Infobox*/
+	.infoBox .item-data a		{ font-weight: bold; }
+
+	.cluster					{ font-weight: bold; }
+
+	/* Search Header */
+	.elm-search-form .searchinput,/*
+	.elm-search-form .radius-search,*/
+	.elm-search-form .radius > span,
+	.elm-search-form .search-form-type-2 .label,
+	/*.elm-search-form .search-form-type-2 .radius > span,*/
+	.elm-search-form .radius-toggle,
+	.elm-search-form .radius-display > span,
+	.select2-chosen,
+	.select2-search input[type="text"] 			{ .font(800) !important; }
+
+	/* Widget Login / Register */
+ 	.userlogin-tabs-menu a 						{ .font(800); }
+	.userlogin-tabs-menu a:first-child:after	{ font-weight: bold; }
+	a.widgetlogin-button-items 					{ font-weight: bold; }
+
+	/* Widget Items */
+	.widget_items .item-container h4 			{ .font(900); }
+
+	/* Widget Logged In */
+	.profile-name span:nth-child(2) 			{ font-weight: 800; }
+
+	/* Items Filter */
+	.filters-wrap .content .selected:first-child,
+	.filters-wrap .content .title { .font(900); }
+
+	.item-container .item-body p strong 	{ font-weight: 400; }
+
+	/* Reviews */
+
+	.page-title .review-stars-container .review-count	{ .font(700); }
+	.page-title .review-stars-container a				{ .font(700); }
+
+	.reviews-container .review-actions button			{ .font(700); }
+	.reviews-container .review-rating-question			{ .font(900); }
+	.reviews-container .review-name						{ .font(900); }
+
+	.item-container.reviews-enabled .review-stars-container a,
+	.elm-items-main .reviews-enabled .review-stars-container a		{ .font(900); }
+
+	/* Catgories / Locations Tabs */
+ 	.cat-tabs-menu a,
+	.categories-container li a { .font(800); }
+
+	/* Featured Items Element */
+	.elm-featured-items-main .item .item-thumbnail .item-location p { font-weight: 500; }
+
+	/* Items Info Element */
+	.elm-items-info .info-count { font-weight: 700; }
+
+	/* Get Directions */
+	.adp-placemark .adp-text	{ .font(800); }
+	.adp-step, .adp-substep		{ .font(400); }
+
+	/* Event Pro Detail */
+	.date-container .field-data:first-child		{ font-weight: bold; }
+	.fee-container .fee-price					{ font-weight: bold; }
+	.organizer-container .thumbnail h2			{ .font(900); }
+
+	.fc-toolbar h2				{ .font(700); }
+	.recurring-dates-container .recurring-dates .single-date a 			{ .font(700); }
+	.recurring-dates-container .recurring-dates .single-date a .date 	{ .font(900); }
+	.event-calendar.fc button	{ .font(700); }
+
+	/* Events Pro Element */
+	.elm-events-pro .entry-date { .font(900); }
+
+	/* Event Pro Container */
+	.event-container .entry-date { .font(900); }
+
+	/**************************************************/
+	/*** && SPECIAL OFFERS PLUGIN                   ***/
+	/**************************************************/
+
+	@import "plugins/special-offers-typography.less";
+
+	/* && end of SPECIAL OFFERS PLUGIN */
+
+	/*** WooCommerce ***/
+
+	@import "woocommerce/woo-typography.less";
+
+}
+
+
+
+
